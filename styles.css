@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300&display=swap');
+
+
+/* Reset margin and padding for the body and other elements */
+body, h1, p, input, button, a {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Style for the body */
+body {
+    background: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Style for the header */
+header {
+    background-color: #3949ab;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 17% 00 00;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #ff8146;
+}
+
+.search-icon img {
+    width: 24px;
+    margin-left: 20px;
+}
+
+/* Adjustments for the logo in the header */
+header .logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Existing styles for the rest of the page */
+
+/* Style for the hero section */
+.hero {
+    background: linear-gradient(2150deg, #ff5d00, #ffa470);
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+    animation: fade ease infinite;
+}
+
+/* Adjustments for the logo */
+
+.right-image {
+    
+    max-width: 50%;
+    height: auto;
+}
+
+.left-image {
+    
+    height: auto;
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.hero .cta-button {
+    background-color: #FFFFFF;
+    color: #FFA500;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero .cta-button:hover {
+    background-color: #FFD700;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.center-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.center-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.left-image, .right-image {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+}
+
+.left-image {
+    left: 0;
+    text-align: left;
+}
+
+.right-image {
+    right: 0;
+    text-align: right;
+}
+
+/* Style for the email signup section */
+.email-signup {
+    background-color: #ffa600;
+    padding: 40px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email-signup input[type="email"] {
+    padding: 15px;
+    width: 80%;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.email-signup input[type="email"]::placeholder {
+    color: #ccc;
+    font-size: 16px;
+}
+
+.email-signup button.center-button {
+    background-color: #f27229;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+.email-signup button.center-button:hover {
+    background-color: #ff8146;
+    transform: scale(1.1);
+}
+
+/* Style for the upgrade section */
+.upgrade-section {
+    background: linear-gradient(45deg, #ffbf00, #ff8146);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 20px; */
+    margin-top: 0;
+}
+
+.upgrade-section-text {
+    width: 45%;
+    /* margin-top: 25px; */
+    margin-left: 5%;
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+.upgrade-section-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Style for the image box */
+.image-box {
+    width: 35%;
+height: 400px;
+flex: 1;
+
+}
+
+.image-box2 {
+    width: 35%;
+height: 400px;
+
+flex: 1;
+
+}
+.image-box2 img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+.image-box2:hover img {
+    transform: scale(1.05);
+}
+
+
+.image-box img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+.image-box:hover img {
+    transform: scale(1.05);
+}
+
+/* Style for the carousel section */
+.carousel-section {
+    background: linear-gradient(45deg, #ff8146, #ffbf00);
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.carousel-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Style for the Carousel Container */
+.carousel-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    height: auto;
+    padding: 10px;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Style for Individual Carousel Items */
+.carousel div {
+    flex: 0 0 24%;
+    margin-right: 15px;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.carousel img:hover {
+    transform: scale(1.015);
+}
+
+/* Style for the new sections */
+.new-section {
+    background: linear-gradient(45deg, #ffbf00, #ff8146);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.section-text {
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.section-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.section-image-box {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.section-image-box img {
+    flex: 1;
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.section-image-box:hover img {
+    transform: scale(1.05);
+}
+
+/* Style for the Testimonials Section */
+.testimonials-section {
+    background: linear-gradient(45deg, #ff8146, #ffbf00);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.testimonial {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 300px;
+    margin: 10px;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #3949ab;
+}
+
+/* Responsive adjustments for testimonials */
+@media (max-width: 768px) {
+    .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Style for the Quiz Section */
+
+
+.quiz-section {
+    background: linear-gradient(45deg, #ff8146, #ffbf00);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.quiz-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.quiz-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.quiz-section form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.quiz-question {
+    margin-bottom: 20px;
+}
+
+.quiz-question p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.quiz-section select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: #333;
+    font-size: 1rem;
+}
+
+.quiz-section .center-button {
+    margin-top: 30px;
+    background-color: #fff;
+    color: #3949ab;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-section .center-button:hover {
+    background-color: #ff8146;
+    color: white;
+}
+
+#quizResult {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Style for the quiz button */
+.quiz-button {
+    background-color: #f27229;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-decoration: none; /* Remove underlines */
+}
+
+.quiz-button:hover {
+    background-color: #ff8146;
+}
+
+.quiz-button:focus {
+    outline: none;
+}
+
+/* Style for the final email sign-up section */
+.final-email-signup {
+    background-color: #ffa600;
+    padding: 40px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.final-email-signup input[type="email"] {
+    padding: 15px;
+    width: 80%;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.final-email-signup input[type="email"]::placeholder {
+    color: #ccc;
+    font-size: 16px;
+}
+
+.final-email-signup button.center-button {
+    background-color: #f27229;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+.final-email-signup button.center-button:hover {
+    background-color: #ff8146;
+    transform: scale(1.1);
+}
+
+/* Style for the footer */
+.footer {
+    background: #3949ab;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style for FAQ page */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+}
+
+.question {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3949ab;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    font-size: 16px;
+    color: #333;
+}
+
+.faq-item:hover .answer {
+    max-height: 200px;
+    margin-top: 10px;
+}
+
+/* Style for the hero section */
+.about-content .hero {
+    background: linear-gradient(45deg,#ff8146,  #ffbf00);
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.about-content .hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-content .hero p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Style for the upgrade sections */
+.about-content .upgrade-section {
+    background-color: #ffbf00;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content .upgrade-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #3949ab;
+}
+
+.about-content .upgrade-section p {
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Style for the whimsical and welcoming illustrations */
+.about-content .carousel-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.about-content .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-content .illustration-placeholder {
+    background-color: #fff;
+    color: #333;
+    padding: 60px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    
+}
+
+
+/* Responsive adjustments for testimonials */
+@media (max-width: 768px) {
+    .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Additional responsive adjustments */
+@media screen and (max-width: 768px) {
+   
+}
+
+@media screen and (max-width: 480px) {
+   
+}
+
+@media screen and (max-width: 768px) {
+    .faq-container {
+        padding: 10px;
+    }
+
+    .faq-item {
+        padding: 15px;
+    }
+
+    .question {
+        font-size: 18px;
+    }
+
+    .answer {
+        font-size: 14px;
+    }
+}
+
+
